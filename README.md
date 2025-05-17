@@ -1,36 +1,39 @@
 🧠 Intelligent Resume Analyzer
-The Intelligent Resume Analyzer is an AI/ML-based tool designed to extract and classify meaningful information from resumes using Natural Language Processing (NLP). It aims to assist in evaluating candidate profiles by identifying key sections like skills, education, and experience. Future updates will include OCR and CNN-based scanning for analyzing scanned resumes.
+An AI-powered resume analysis tool that scans resumes using Tesseract OCR and OpenCV, then matches them with job descriptions using Cosine Similarity to provide a relevance score. Built with NLP and information retrieval techniques, this project helps automate and improve the candidate screening process.
 
 🚀 Features
-📄 Resume Text Classification using NLP techniques
+🔍 Resume Scanning using Tesseract OCR + OpenCV
 
-🧠 Extracts sections like Education, Experience, and Skills
+🧠 NLP-Based Parsing to extract key information (skills, education, experience)
 
-🖼️ Planned: OCR + CNN for scanned document parsing
+📊 Cosine Similarity Matching between resume content and job description
 
-📊 Highlights keyword relevance and resume structure quality
+🧾 Scoring System to rank resumes based on relevance
+
+📁 Uses a manually created dataset for accurate testing and results
 
 🛠️ Tech Stack
 Python
 
-NLP: Scikit-learn, NLTK / spaCy
+Tesseract OCR
 
-OCR (Planned): Tesseract OCR
+OpenCV
 
-Deep Learning (Planned): CNN with TensorFlow/Keras
+scikit-learn (TF-IDF, Cosine Similarity)
 
-📌 Usage
-Upload a resume in .txt, .pdf, or .docx format
+NLTK / spaCy (for NLP processing)
 
-The NLP model processes and extracts structured data
+📂 Dataset
+The system uses a custom dataset of resumes and job descriptions stored in local directories to train and test matching accuracy.
 
-Get insights on resume quality and content alignment
+🎯 Use Case
+HR teams and recruitment tools can use this system to automatically rank resumes and shortlist candidates based on how well their profiles match job requirements.
 
-(Upcoming) Analyze image-based resumes using OCR and CNN
+🔮 Future Scope
+Integration with ATS (Applicant Tracking Systems)
 
-🧠 Future Scope
-Resume-job description matching via ML models
+Support for multiple job descriptions in batch mode
 
-Scoring based on keyword relevance
+Real-time resume upload and analysis via web APIs
 
-Graph-based analytics and dashboards.
+Visualization of resume–job matching analytics
